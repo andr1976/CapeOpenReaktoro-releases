@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReaktoroCO CESAR-1</title>
+<meta name="description" content="Free CAPE-OPEN 1.1 electrolyte NRTL property package for the CESAR-1 solvent (AMP/piperazine), built on Reaktoro.">
+<style>
+  :root {
+    --navy: #002D40; --red: #D61F39; --amber: #E6A740; --slate: #82979F; --grey: #4C4D4E;
+    --bg: #ffffff; --surface: #f4f6f7; --text: #4C4D4E; --heading: #002D40; --border: #d5dcdf; --link: #002D40;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1a21; --surface: #142630; --text: #d6dde0; --heading: #ffffff; --border: #2b4350; --link: #E6A740; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 Arial, Helvetica, sans-serif; }
+  header { background: var(--navy); color: #fff; padding: 48px 16px 40px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  header .wrap { padding: 0; }
+  header h1 { margin: 0 0 8px; font-size: 30px; line-height: 1.2; }
+  header p { margin: 0; color: #c9d4d8; max-width: 640px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 24px; }
+  .btn { display: inline-block; background: var(--amber); color: var(--navy); font-weight: bold; padding: 12px 20px;
+         border-radius: 4px; text-decoration: none; }
+  .btn:hover { filter: brightness(1.06); }
+  .meta { color: #c9d4d8; font-size: 14px; }
+  main { padding: 32px 0 48px; }
+  h2 { color: var(--heading); font-size: 21px; margin: 36px 0 10px; }
+  a { color: var(--link); }
+  .cite { background: var(--surface); border-left: 4px solid var(--red); padding: 14px 18px; margin: 12px 0; }
+  .cite p { margin: 6px 0; }
+  .note { border-left-color: var(--slate); }
+  ol, ul { padding-left: 22px; }
+  code { background: var(--surface); padding: 1px 5px; border-radius: 3px; font-size: 14px; }
+  footer { border-top: 1px solid var(--border); padding: 20px 0 32px; font-size: 14px; color: var(--slate); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Reaktoro e-NRTL CESAR-1 property package</h1>
+    <p>A free CAPE-OPEN 1.1 property package for the CESAR-1 solvent (aqueous AMP and piperazine) for CO<sub>2</sub>
+       capture, based on the electrolyte NRTL model and built on Reaktoro. Portable, per-user install for Windows x64.</p>
+    <div class="cta">
+      <a class="btn" id="download" href="https://github.com/andr1976/CapeOpenReaktoro-releases/releases">Download</a>
+      <span class="meta" id="version">See the releases page for the latest version.</span>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <h2>Cite this work</h2>
+  <div class="cite">
+    <p>Any publication, presentation, report or other dissemination of results obtained with the package shall cite:</p>
+    <p id="paper"><a href="citation.json">citation.json</a></p>
+  </div>
+  <div class="cite note">
+    <p>Please also cite the Reaktoro framework on which the package is built:</p>
+    <p id="reaktoro">A. M. M. Leal, Reaktoro: An open-source unified framework for modeling chemically reactive systems,
+       https://reaktoro.org (2015).</p>
+  </div>
+
+  <h2>What it is</h2>
+  <ul>
+    <li>One CAPE-OPEN 1.1 property package, <b>Reaktoro eNRTL (AMP-PZ-CO2-H2O)</b>, with the compounds H<sub>2</sub>O,
+        CO<sub>2</sub>, AMP, PZ, N<sub>2</sub> and O<sub>2</sub> (N<sub>2</sub> and O<sub>2</sub> as Henry-law inerts).</li>
+    <li>Vapour-liquid equilibrium, enthalpy, density, viscosity and surface tension of the CESAR-1 solvent with
+        published parameters, for absorber and desorber simulation.</li>
+    <li>Example COFE flowsheets: absorber, absorber with desorber, lean vapour compression and pilot-plant cases.</li>
+  </ul>
+
+  <h2>Install</h2>
+  <ol>
+    <li>Extract the ZIP to a permanent folder, e.g. <code>C:\ReaktoroCO-CESAR1</code>.</li>
+    <li>Close the simulator and run <code>Install.bat</code> (per user, no administrator rights; run it again if you move the folder).</li>
+    <li>Optional: <code>Test-Package.ps1</code> checks the installation without a simulator.</li>
+    <li>Select <b>Reaktoro eNRTL (AMP-PZ-CO2-H2O)</b> in the simulator.</li>
+  </ol>
+  <p>To uninstall, run <code>Uninstall.bat</code> and delete the folder.</p>
+
+  <h2>Prerequisites</h2>
+  <ul>
+    <li>Windows 10/11 x64 with .NET Framework 4.8</li>
+    <li>Microsoft Visual C++ 2015-2022 x64 runtime</li>
+    <li>A 64-bit CAPE-OPEN 1.1 simulator, e.g. <a href="https://www.cocosimulator.org">COCO/COFE</a> with ChemSep</li>
+  </ul>
+
+  <h2>Documentation and source</h2>
+  <ul>
+    <li><a href="https://github.com/andr1976/CapeOpenReaktoro-releases/tree/main/Flowsheets">Example flowsheets</a></li>
+    <li>Modified Reaktoro: <a href="https://github.com/andr1976/reaktoro">andr1976/reaktoro</a>; the source of the exact
+        build is attached to every release (GNU LGPL v2.1)</li>
+    <li><a href="LICENSE.txt">Licence</a>: free to use, including commercially, under its conditions; provided as is, without warranty</li>
+  </ul>
+
+  <h2>Support</h2>
+  <p>Questions and bug reports: <a href="https://github.com/andr1976/CapeOpenReaktoro-releases/issues">issue tracker</a>.</p>
+</main>
+<footer>
+  <div class="wrap">Copyright (c) 2026 Anders Andreasen. Built on <a href="https://reaktoro.org">Reaktoro</a> and the
+    <a href="https://www.colan.org">CO-LaN</a> CAPE-OPEN 1.1 standard.</div>
+</footer>
+<script>
+  fetch("citation.json").then(r => r.json()).then(c => {
+    const p = c.paper;
+    const doi = p.doi_kind === "placeholder" ? p.doi : `<a href="https://doi.org/${p.doi}">${p.doi}</a>`;
+    document.getElementById("paper").innerHTML = `${p.authors}, "${p.title}", ${p.venue}, DOI: ${doi}`;
+    document.getElementById("reaktoro").textContent = c.reaktoro;
+  }).catch(() => {});
+  fetch("https://api.github.com/repos/andr1976/CapeOpenReaktoro-releases/releases?per_page=1")
+    .then(r => r.json()).then(rs => {
+      const r = rs && rs[0]; if (!r) return;
+      const zip = (r.assets || []).find(a => /^ReaktoroCO-CESAR1-Portable-.*\.zip$/.test(a.name));
+      if (zip) document.getElementById("download").href = zip.browser_download_url;
+      document.getElementById("version").textContent =
+        `${r.name || r.tag_name} (${new Date(r.published_at).toISOString().slice(0, 10)})${r.prerelease ? ", pre-release" : ""}`;
+    }).catch(() => {});
+</script>
+</body>
+</html>

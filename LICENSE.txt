@@ -1,0 +1,42 @@
+ReaktoroCO CESAR-1 CAPE-OPEN property package - licence
+=======================================================
+
+Copyright (c) 2026 Anders Andreasen
+
+This licence covers the files of this bundle written by the copyright holder: ReaktoroCO.CapeOpen.dll,
+ReaktoroCO.Core.dll, ReaktoroShim.dll (and any other *Shim.dll), the install scripts, the example
+flowsheets and the documentation. The third-party libraries in package\ are NOT covered by this licence;
+they are distributed under their own licences, listed in THIRD-PARTY-NOTICES.txt and SOURCES.txt.
+
+1. Permission to use. You may install and use the software free of charge, for any purpose, including
+   commercial work, subject to the conditions below.
+
+2. Redistribution. You may redistribute the unmodified bundle (the ZIP file as released, including this
+   file, THIRD-PARTY-NOTICES.txt, SOURCES.txt and the licenses\ folder) free of charge. You may not sell
+   it or redistribute modified copies of the files covered by this licence without written permission.
+
+3. Third-party libraries (LGPL). Reaktoro.dll, Optima.dll, phreeqc4rkt.dll, ThermoFun.dll and
+   ChemicalFun.dll are licensed under the GNU Lesser General Public License. Nothing in this licence
+   restricts your rights under the LGPL. In particular, you may replace these libraries with modified
+   versions, and you may modify and reverse engineer the files covered by this licence to the extent
+   needed to debug such modifications. The corresponding source of these libraries, including the
+   modifications made for this package, is identified in SOURCES.txt.
+
+4. Citation (condition of use). Any publication, presentation, report, thesis or other
+   dissemination of results obtained with the software, in whole or in part, shall cite:
+     A. Andreasen, "A Free CAPE-OPEN Electrolyte NRTL Property Package for the CESAR-1 Solvent and a Transferable Equilibrium-Stage Column Model Validated on Four Pilot Plants", preprint, DOI: [PREPRINT DOI]
+   Users are also encouraged to cite the Reaktoro framework on which the software is built:
+     A. M. M. Leal, Reaktoro: An open-source unified framework for modeling chemically reactive systems, https://reaktoro.org (2015).
+   This condition does not apply to the third-party libraries listed in clause 3.
+
+5. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+   OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. The results of the
+   software are not a substitute for engineering judgement and verification.
+
+6. The software requires a CAPE-OPEN 1.1 simulator (for example COCO/COFE with ChemSep), which is not
+   part of this bundle and is used under its own licence terms.
+
+Questions and bug reports: https://github.com/andr1976/CapeOpenReaktoro-releases/issues

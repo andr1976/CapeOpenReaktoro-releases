@@ -1,0 +1,41 @@
+{
+  "fork": {
+    "repo": "https://github.com/andr1976/reaktoro",
+    "branch": "capeopen-production",
+    "base": "Reaktoro 2.13.0 (f587235e)",
+    "commit": "6919c1c9daf7a9f7872a6ceef65a0df5f4731b82"
+  },
+  "shim_tree": "b679f75bd26a2674252c43360e9f4f1cfc93a560",
+  "asset": "native-runtime-6919c1c9-b679f75b.zip",
+  "files": {
+    "BiogasShim.dll": "eea8e05071acfce12da42550fea6f8183eaa209f4d8b5a480f7a942efd9964e8",
+    "ChemicalFun.dll": "93ded54f73facdcbde004f714a269fac7236cedd27af8a68110400b854325bd2",
+    "databases/ExtendedUNIQUAC.v1997.hpc.refit.co2aq.yaml": "ba8e9d35a081f78e35a085c157d8bee11ab6d3246ac588f8917ef0b619b3ff04",
+    "databases/ExtendedUNIQUAC.v1997.hpc.refit.yaml": "18700667c75afe16fa48c5aaed9fa8053f1cbfffdca59ada1f00e438d314bf4f",
+    "databases/ExtendedUNIQUAC.v1997.hpc.yaml": "e37c310b0cc22722416e474ba912f02877e35d91b18d300888e5eea050283d4b",
+    "databases/supcrt16.biogas.yaml": "82de43d136828735222cc66e38c3692dddfdb7cd0567ade06d6284f53c489f77",
+    "fmt.dll": "5f1701263747490e8553bb7f5d24e1c198adcf9b5882b57087d7e218d9a33bab",
+    "HpcShim.dll": "22e053b5f6c6e36e8eadef51562a062b2eaaaf1eb0d787c173339d455fc0332c",
+    "MeaShim.dll": "0702015ae33ca54058ffd9808d50af31117eaaea44c91b1f9bd6ea871b2317a4",
+    "Optima.dll": "da8c426abeb8b5995657160c5ce86cd78119d9f22d3962b1dcc5efcc30be9488",
+    "phreeqc4rkt.dll": "2e82698e2018d3881ffa6d740e576a587d03f6ab08eee98bcb501b4c686a2537",
+    "Reaktoro.dll": "aa411a183db99bd97158143548dfe75496db61bb2a99461f84262484481bf09e",
+    "ReaktoroShim.dll": "302295843df877adbc93159518019ba46bbb99559a076106b0085fd65298c089",
+    "spdlog.dll": "2cfdf513639bf58a25f679c2705c511dffe81256ae70966e90c1e31a7f00df92",
+    "ThermoFun.dll": "0610e841341342225b87ceffba40435eab9179d4b84f5ddaf10d8e3c6756932a",
+    "yaml-cpp.dll": "900dab553b87fa8ec4d277518d2ceccec8e8c79e27b2313fdb1a2b304d8e74c6"
+  },
+  "conda": {
+    "Optima": "0.6.0",
+    "phreeqc4rkt": "3.6.2.2",
+    "ThermoFun": "0.4.5",
+    "ChemicalFun": "0.1.10",
+    "fmt": "10.2.1",
+    "spdlog": "1.12.0",
+    "yaml-cpp": "0.8.0",
+    "Eigen": "3.4.0",
+    "autodiff": "1.1.2",
+    "nlohmann_json": "3.12.0",
+    "tsl-ordered-map": "1.1.0"
+  }
+}

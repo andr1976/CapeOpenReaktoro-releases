@@ -1,0 +1,11 @@
+{
+  "paper": {
+    "authors": "A. Andreasen",
+    "title": "A Free CAPE-OPEN Electrolyte NRTL Property Package for the CESAR-1 Solvent and a Transferable Equilibrium-Stage Column Model Validated on Four Pilot Plants",
+    "venue": "preprint",
+    "doi": "[PREPRINT DOI]",
+    "doi_kind": "placeholder"
+  },
+  "reaktoro": "A. M. M. Leal, Reaktoro: An open-source unified framework for modeling chemically reactive systems, https://reaktoro.org (2015).",
+  "issues_url": "https://github.com/andr1976/CapeOpenReaktoro-releases/issues"
+}
